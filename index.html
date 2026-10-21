@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Conectar & Transformar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-layout">
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#inicio" class="brand">
+          <span>Conectar & Transformar</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          
+          <li class="nav-dropdown">
+            <a href="#projetos" class="nav-link">Projetos &#9662;</a>
+            <ul class="dropdown-menu">
+              <li><a href="#projetos" class="dropdown-link">Educação</a></li>
+              <li><a href="#projetos" class="dropdown-link">Meio Ambiente</a></li>
+              <li><a href="#projetos" class="dropdown-link">Alimentação</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#voluntariado" class="nav-link">Voluntariado</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li>
+            <button type="button" class="btn btn-secondary btn-sm" data-open-modal>
+              Fazer Doação
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="split-layout">
+          <div>
+            <span class="badge badge-success mb-2">Transformação Social</span>
+            <h1>Apoie causas que transformam vidas e comunidades.</h1>
+            <p>Plataforma para gerenciamento de projetos, captação de recursos e engajamento de voluntários.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#voluntariado" class="btn btn-primary">Quero ser Voluntário</a>
+              <button type="button" class="btn btn-outline" data-open-modal>Fazer Doação</button>
+            </div>
+          </div>
+          <div>
+            <img src="img/hero.jpg" alt="Voluntários da ONG">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="d-flex justify-between align-center mb-3">
+          <h2>Projetos Ativos</h2>
+          <div class="d-flex gap-1">
+            <span class="tag">#Educação</span>
+            <span class="tag">#MeioAmbiente</span>
+            <span class="tag">#Alimentação</span>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <div class="card">
+            <div class="card-media">
+              <span class="card-media-tag badge badge-success">Ativo</span>
+              <img src="img/educacao.jpg" alt="Projeto Alfabetização">
+            </div>
+            <div class="card-body">
+              <span class="tag">Educação</span>
+              <h3>Alfabetização e Futuro</h3>
+              <p>Oferece reforço escolar, leitura e material pedagógico para crianças carentes.</p>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 80%;"></div>
+              </div>
+              <p style="font-size: var(--font-xs); margin: 0;">80% da meta arrecadada</p>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: var(--font-sm);">45 Voluntários</span>
+              <button type="button" class="btn btn-secondary btn-sm" data-open-modal>Apoiar</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-media">
+              <span class="card-media-tag badge badge-danger">Urgente</span>
+              <img src="img/meio-ambiente.jpg" alt="Projeto Reflorestamento">
+            </div>
+            <div class="card-body">
+              <span class="tag">Meio Ambiente</span>
+              <h3>Reflorestar Nossa Terra</h3>
+              <p>Plantio de mudas nativas para recuperação de nascentes e áreas degradadas.</p>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 65%;"></div>
+              </div>
+              <p style="font-size: var(--font-xs); margin: 0;">65% da meta arrecadada</p>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: var(--font-sm);">120 Voluntários</span>
+              <button type="button" class="btn btn-secondary btn-sm" data-open-modal>Apoiar</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-media">
+              <span class="card-media-tag badge badge-warning">Em Andamento</span>
+              <img src="img/alimentacao.jpg" alt="Projeto Prato Solidário">
+            </div>
+            <div class="card-body">
+              <span class="tag">Alimentação</span>
+              <h3>Prato Cheio & Solidário</h3>
+              <p>Distribuição de refeições nutritivas e cestas de alimentos para famílias em vulnerabilidade.</p>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 90%;"></div>
+              </div>
+              <p style="font-size: var(--font-xs); margin: 0;">90% da meta arrecadada</p>
+            </div>
+            <div class="card-footer">
+              <span style="font-size: var(--font-sm);">85 Voluntários</span>
+              <button type="button" class="btn btn-secondary btn-sm" data-open-modal>Apoiar</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="sobre">
+      <div class="container">
+        <div class="text-center mb-3">
+          <h2>Nossos Pilares</h2>
+          <p>Estrutura organizada em grid de 12 colunas.</p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="stat-card">
+              <h3>Transparência</h3>
+              <p>Prestação de contas clara para todos os doadores e parceiros da ONG.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="stat-card">
+              <h3>Engajamento</h3>
+              <p>Incentivo constante ao voluntariado em ações comunitárias presenciais e remotas.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="stat-card">
+              <h3>Sustentabilidade</h3>
+              <p>Impacto duradouro e foco em soluções que promovam a autonomia social.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="voluntariado">
+      <div class="container">
+        <div class="split-layout">
+          <div>
+            <h2>Seja um Voluntário</h2>
+            <p>Doe seu tempo e faça parte da transformação de vidas em nossa comunidade.</p>
+            <div class="card" style="padding: var(--spacing-2); margin-top: var(--spacing-2);">
+              <h4>Estados dos Botões</h4>
+              <p style="font-size: var(--font-sm);">Exemplos dos estados exigidos (normal, hover, focus, active, disabled):</p>
+              <div class="d-flex flex-wrap gap-1 mt-1">
+                <button type="button" class="btn btn-primary btn-sm">Primário</button>
+                <button type="button" class="btn btn-secondary btn-sm">Secundário</button>
+                <button type="button" class="btn btn-outline btn-sm">Outline</button>
+                <button type="button" class="btn btn-primary btn-sm" disabled>Desabilitado</button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card" style="padding: var(--spacing-3);">
+              <h3>Cadastro de Voluntário</h3>
+              <p style="font-size: var(--font-sm); margin-bottom: var(--spacing-2);">Formulário com validação visual de campos.</p>
+              
+              <form id="volunteerForm">
+                <div class="form-group">
+                  <label for="nome" class="form-label">Nome Completo *</label>
+                  <input type="text" id="nome" class="form-control" placeholder="Seu nome" required minlength="3">
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">E-mail *</label>
+                  <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="telefone" class="form-label">Telefone / WhatsApp *</label>
+                  <input type="tel" id="telefone" class="form-control" placeholder="(11) 99999-9999" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="area" class="form-label">Área de Interesse *</label>
+                  <select id="area" class="form-control" required>
+                    <option value="">Selecione...</option>
+                    <option value="educacao">Educação</option>
+                    <option value="ambiente">Meio Ambiente</option>
+                    <option value="alimentacao">Alimentação</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensagem" class="form-label">Mensagem / Motivação</label>
+                  <textarea id="mensagem" class="form-control" rows="3" placeholder="Conte como deseja ajudar..."></textarea>
+                </div>
+
+                <div class="d-flex gap-2">
+                  <button type="submit" class="btn btn-primary btn-block">Enviar Cadastro</button>
+                  <button type="reset" class="btn btn-outline">Limpar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <h4>ONG Conectar & Transformar</h4>
+          <p>Organização sem fins lucrativos dedicada à promoção da dignidade e cidadania.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4>Links Rápidos</h4>
+          <p><a href="#inicio">Início</a> | <a href="#projetos">Projetos</a> | <a href="#voluntariado">Voluntariado</a></p>
+        </div> 
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="donationModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Fazer Doação</h3>
+        <button type="button" data-close-modal>&times;</button>
+      </div>
+      <form id="donationForm">
+        <div class="form-group">
+          <label for="valor" class="form-label">Valor (R$)</label>
+          <input type="number" id="valor" class="form-control" placeholder="50" min="5" required>
+        </div>
+        <div class="form-group">
+          <label for="doador" class="form-label">Seu Nome</label>
+          <input type="text" id="doador" class="form-control" placeholder="Nome completo" required>
+        </div>
+        <div class="d-flex justify-between" style="margin-top: 16px;">
+          <button type="button" class="btn btn-outline" data-close-modal>Cancelar</button>
+          <button type="submit" class="btn btn-secondary">Confirmar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+<!-- Algumas funções foram pesquisadas e adaptadas da IA para o projeto -->

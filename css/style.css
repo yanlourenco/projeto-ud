@@ -1,0 +1,82 @@
+@import url('variables.css');
+@import url('reset.css');
+@import url('grid.css');
+@import url('components.css');
+@import url('responsive.css');
+
+.hero {
+  padding: var(--spacing-5) 0;
+  background-color: var(--color-neutral-white);
+  border-bottom: 1px solid var(--color-neutral-border);
+}
+
+.hero h1 {
+  margin-bottom: var(--spacing-2);
+}
+
+.hero p {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-3);
+}
+
+.hero img {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.stat-card {
+  background-color: var(--color-neutral-white);
+  border: 1px solid var(--color-neutral-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-2);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.site-footer {
+  background-color: var(--color-neutral-dark);
+  color: #cbd5e1;
+  padding: var(--spacing-4) 0 var(--spacing-2);
+}
+
+.site-footer h4 {
+  color: var(--color-neutral-white);
+  margin-bottom: var(--spacing-2);
+}
+
+.site-footer p {
+  color: #94a3b8;
+  font-size: var(--font-sm);
+}
+
+.site-footer a {
+  color: #94a3b8;
+}
+
+.site-footer a:hover {
+  color: var(--color-neutral-white);
+}
+
+.footer-bottom {
+  margin-top: var(--spacing-3);
+  padding-top: var(--spacing-2);
+  border-top: 1px solid #334155;
+  text-align: center;
+  font-size: var(--font-xs);
+  color: #64748b;
+}
+
+.text-center { text-align: center; }
+.mb-1 { margin-bottom: var(--spacing-1); }
+.mb-2 { margin-bottom: var(--spacing-2); }
+.mb-3 { margin-bottom: var(--spacing-3); }
+
+/* Algumas funções foram pesquisadas e adaptadas da IA para o projeto */
